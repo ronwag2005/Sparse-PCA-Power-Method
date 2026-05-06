@@ -4,7 +4,7 @@
 ## Overview
 This repository contains a manual implementation of the **Simultaneous Power Method** used to perform Principal Component Analysis (PCA) on the **MovieLens 100K** dataset[cite: 1]. The project focuses on recovering the latent structures of movie preferences while navigating the technical constraints of a **93.7% sparse ratings matrix**[cite: 1]. Code for the efficient **Simultaneous Power Method** has been made accessible and open-source for implementing further projects.
 
- **[View the Interactive PCA Loadings Plot](YOUR_HOSTED_LINK_HERE)**
+ **[View the Interactive PCA Loadings Plot](http://rpubs.com/ronwag2005/1429898)**
 
 ## Key Technical Achievements
 * **Implicit Centering Algorithm:** Developed a memory-efficient two-step "Forward-Backward" pass logic that performs PCA on centered data without explicitly densifying the sparse matrix[cite: 1].

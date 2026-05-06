@@ -72,3 +72,4 @@ This project requires **R** and the following libraries:
 **Institution:** Ashoka University
 
 **Acknowledgement:** This project has been done as the final project for the Applied Statistics 1 undergraduate course at Ashoka University in the Spring 2026 semester.
+AI tools were utilized during this project to assist with code structuring, debugging syntax errors, and formatting LaTeX outputs. All mathematical logic, analytical interpretations, and dataset subsets were independently directed and verified.

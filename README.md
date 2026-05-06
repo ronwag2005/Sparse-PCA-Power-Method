@@ -1,4 +1,4 @@
-# Sparse-SVD-Power-Method: Dimensionality Reduction for Sparse Movie Ratings Data
+# Sparse-PCA-Power-Method: Dimensionality Reduction for Sparse Movie Ratings Data
 
 ## Overview
 This repository contains a manual implementation of the **Simultaneous Power Method** used to perform Principal Component Analysis (PCA) on the **MovieLens 100K** dataset[cite: 1]. The project focuses on recovering the latent structures of movie preferences while navigating the technical constraints of a **93.7% sparse ratings matrix**[cite: 1].

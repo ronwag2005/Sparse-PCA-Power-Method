@@ -1,18 +1,15 @@
-To make your repository as professional as possible, I have combined your technical achievements with the new "Usability" and "Analytical" sections. This version is formatted for a high-impact GitHub landing page.
 
-***
-
-# Sparse-SVD-Power-Method: Latent Feature Recovery in Movie Markets
+# Sparse-SVD-Power-Method: Dimensionality Reduction for Sparse Movie Ratings Data
 
 ## Overview
-This repository contains a manual implementation of the **Simultaneous Power Method** used to perform Principal Component Analysis (PCA) on the **MovieLens 100K** dataset[cite: 1]. The project focuses on recovering the latent structures of movie preferences while navigating the technical constraints of a **93.7% sparse ratings matrix**[cite: 1].
+This repository contains a manual implementation of the **Simultaneous Power Method** used to perform Principal Component Analysis (PCA) on the **MovieLens 100K** dataset[cite: 1]. The project focuses on recovering the latent structures of movie preferences while navigating the technical constraints of a **93.7% sparse ratings matrix**[cite: 1]. Code for the efficient **Simultaneous Power Method** has been made accessible and open-source for implementing further projects.
 
- **[View the Interactive Latent Space Explorer](YOUR_HOSTED_LINK_HERE)**
+ **[View the Interactive PCA Loadings Plot](YOUR_HOSTED_LINK_HERE)**
 
 ## Key Technical Achievements
-* **Implicit Centering Algorithm:** Developed a memory-efficient "Forward-Backward" pass logic that performs PCA on centered data without explicitly densifying the sparse matrix[cite: 1].
-* **Subspace Stability:** Utilized the **Standard Gram-Schmidt** process within the power iteration loop to prevent subspace collapse, successfully recovering the first 10 principal components[cite: 1].
-* **Mathematical Optimization:** By avoiding explicit centering ($X - \mathbf{1}\mu^T$), the implementation maintains $O(\text{nnz})$ computational complexity, allowing for analysis on standard consumer hardware[cite: 1].
+* **Implicit Centering Algorithm:** Developed a memory-efficient two-step "Forward-Backward" pass logic that performs PCA on centered data without explicitly densifying the sparse matrix[cite: 1].
+* **Subspace Stability:** Manually utilized the **Gram-Schmidt** process within the power iteration loop to prevent subspace collapse, successfully recovering the first 10 principal components[cite: 1].
+* **Mathematical Optimization:** By avoiding explicitly centering the data matrix ($X - \mathbf{1}\mu^T$), the implementation maintains $O(\text{nnz})$ computational complexity, allowing for analysis of large, sparse data matrices on standard consumer hardware[cite: 1].
 
 ## Analytical Insights & Demographic Inferences
 * **Dimensionality Reduction:** Condensed 1,682 movie dimensions into a low-rank space that explains over **35% of total market variation**[cite: 1].
@@ -20,7 +17,7 @@ This repository contains a manual implementation of the **Simultaneous Power Met
 * **Gender-Based Divergence:** Utilizing **Welch’s T-test**, the analysis identified a distinct divergence in user centroids along the latent preference axes, providing predictive power for gender-based movie recommendations[cite: 1].
 
 ## Methodology: The Power Method
-The latent structure is recovered by approximating the centered ratings matrix $X$ using SVD: $X \approx U \Sigma V^{T}$[cite: 1].
+The first k (here k=10) Singular Vectors and Singular Values are recovered by approximating the centered ratings matrix $X$ using SVD: $X \approx U \Sigma V^{T}$[cite: 1].
 
 | Step | Operation | Purpose |
 | :--- | :--- | :--- |

@@ -28,21 +28,32 @@ The first k (here k=10) Singular Vectors and Singular Values are recovered by ap
 
 ## Repository Structure
 ```text
-├── README.md                   # Project overview and methodology
-├── main_analysis.R             # Core R script containing the Power Method and visualizations
-├── ml-100k/                    # MovieLens 100K dataset directory (requires download)
-│   ├── u.data                  # Sparse ratings data
-│   ├── u.user                  # User demographics
-│   ├── u.item                  # Movie metadata
-│   └── u.genre                 # Genre mappings
-├── outputs/                    # Exported visualizations and interactive HTML
-│   ├── PCA_Interactive_Loadings.html
-│   ├── Female_Loadings_Plot.png
-│   ├── Male_Loadings_Plot.png
-│   └── Gender_Diagnostics_Plot.png
-└── report/                     # LaTeX documentation
-    └── Final_Report.tex        # Full technical analysis, equations, and interpretations
+## Repository Structure
+├── README.md                           # Project overview and methodology
+├── code/                               # Project scripts
+│   └── main_analysis.R                 # Core R script containing the Power Method and visualizations
+├── ml-100k/                            # MovieLens 100K dataset directory (requires download)
+│   ├── u.data                          # Sparse ratings data
+│   ├── u.user                          # User demographics
+│   ├── u.item                          # Movie metadata
+│   └── u.genre                         # Genre mappings
+├── outputs/                            # Exported visualizations and interactive HTML
+│   ├── Age_Analysis.png                # Correlation plot for Age vs PC Scores
+│   ├── Convergence_Rate_Analysis.png   # Log-linear error decay for first 10 PCs
+│   ├── Female_Loadings_Plot.png        # Structured loadings for female submatrix
+│   ├── Gender_Comparison_Plot.png      # Scree and convergence comparison across genders
+│   ├── Male_Loadings_Plot.png          # Structured loadings for male submatrix
+│   ├── Movie_Data_Genre_Distribution.png # Bar chart of genre frequencies
+│   ├── Movie_Data_Loadings_Plot.png    # Scatter plot of movies in PC1-PC2 space
+│   ├── Movie_Matrix_Sparsity_Plot.png  # Spy plot visualising the 93.7% sparsity
+│   ├── PCA_Interactive_Loadings.html   # Plotly interactive version of movie loadings
+│   ├── PC_Scores_Plot.png              # Scatter plot of user coordinates with centroids
+│   ├── Structured_Loadings.png         # Top/Bottom loadings for PCs 1-4
+│   └── Variance_Explained_Plot.png     # Scree plot showing proportion of variance
+└── report/                             # LaTeX documentation
+    └── Final_Report.tex                # Full technical analysis, equations, and interpretations
  ```
+
 ## Getting Started
 
 ### Dependencies

@@ -13,9 +13,9 @@ This repository contains a manual implementation of the **Simultaneous Power Met
 
 ## Analytical Insights & Demographic Inferences
 * **Dimensionality Reduction:** Condensed 1,682 movie dimensions into a low-rank space that explains over **35% of total market variation**.
-* **Latent Market Axes:** Identified the fundamental drivers of 1990s cinematic preference: a primary "Market Engagement" axis (PC1) capturing mainstream saturation, and a secondary "Genre Pivot" (PC2) separating visceral blockbusters from critical classics.
+* **Latent Market Axes:** Identified the fundamental drivers of cinematic preference: a primary "Market Engagement" axis (PC1) capturing mainstream saturation, and a secondary "Genre Pivot" (PC2) separating visceral blockbusters from critical classics.
 * **Age & Preference Evolution:** Identified a significant **0.369 correlation** between user age and the second principal component (PC2). This suggests a systematic shift toward "Classic/Critically Acclaimed" titles as users age.
-* **Gender-Based Divergence:** Utilizing **independent two-tailed t-tests**, the analysis identified a highly significant divergence ($p < 0.001$) in user engagement volume (PC1) between genders, while confirming that taste distributions along the stylistic Genre Pivot (PC2) remain statistically indistinguishable.
+* **Gender-Based Divergence:** Utilizing **two-tailed t-tests**, the analysis identified a highly significant divergence ($p < 0.001$) in user engagement volume (PC1) between genders, while confirming that taste distributions along the stylistic Genre-based axis (PC2) remain statistically indistinguishable.
 
 ## Methodology: The Power Method
 The first k (here k=10) Singular Vectors and Singular Values are recovered by approximating the centered ratings matrix $X$ using SVD: $X \approx U \Sigma V^{T}$.
@@ -42,3 +42,33 @@ The first k (here k=10) Singular Vectors and Singular Values are recovered by ap
 │   └── Gender_Diagnostics_Plot.png
 └── report/                     # LaTeX documentation
     └── Final_Report.tex        # Full technical analysis, equations, and interpretations
+ ```
+## Getting Started
+
+### Dependencies
+
+This project requires **R** and the following libraries:
+
+* `Matrix` (for sparse matrix operations)[cite: 1]
+
+* `ggplot2` & `plotly` (for static and interactive visualization)[cite: 1]
+
+* `dplyr` & `stringr` (for data wrangling)[cite: 1]
+
+
+
+### Data Setup
+
+1. Download the MovieLens 100K dataset from [GroupLens](https://grouplens.org/datasets/movielens/100k/).
+
+2. Ensure the `ml-100k` folder is placed in your working directory.
+
+***
+
+**Author:** Rohan Wagle  
+
+**Date:** April 2026  
+
+**Institution:** Ashoka University
+
+**Acknowledgement:** This project has been done as the final project for the Applied Statistics 1 undergraduate course at Ashoka University in the Spring 2026 semester.

@@ -60,11 +60,11 @@ The first k (here k=10) Singular Vectors and Singular Values are recovered by ap
 
 This project requires **R** and the following libraries:
 
-* `Matrix` (for sparse matrix operations)[cite: 1]
+* `Matrix` (for sparse matrix operations)
 
-* `ggplot2` & `plotly` (for static and interactive visualization)[cite: 1]
+* `ggplot2` & `plotly` (for static and interactive visualization)
 
-* `dplyr` & `stringr` (for data wrangling)[cite: 1]
+* `dplyr` & `stringr` (for data wrangling)
 
 
 
